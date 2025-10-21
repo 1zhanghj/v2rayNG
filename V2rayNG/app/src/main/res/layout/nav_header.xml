@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
-    v2rayNG 汉堡菜单头部标题修改
-    修改日期：2025-10-21
-    修改内容：修改汉堡菜单头部标题显示
-    - 标题文本 (TextView的text属性) - 第18行
-    - 原标题："@string/app_name" -> 新标题："v2rayNG FFSCloud定制"
-    - 修改方法：直接修改TextView的text属性值
-    
-    修改原因：用户要求定制汉堡菜单标题显示
-    注意：此修改仅影响汉堡菜单头部标题，不影响应用安装名称和小部件显示
--->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/view_height_dp160"
@@ -18,7 +7,6 @@
     android:orientation="vertical"
     android:padding="@dimen/padding_spacing_dp16">
 
-    <!-- 汉堡菜单头部标题 - 修改为定制版本 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
