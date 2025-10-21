@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    v2rayNG 汉堡菜单修改
+    修改日期：2025-10-21
+    修改内容：隐藏汉堡菜单中的三个菜单项
+    1. 推广菜单 (@+id/promotion) - 第31-35行
+    2. Logcat菜单 (@+id/logcat) - 第37-41行  
+    3. 检查更新菜单 (@+id/check_for_update) - 第43-47行
+    
+    修改方法：为这三个菜单项添加 android:visible="false" 属性
+    修改原因：用户要求隐藏这三个菜单项，简化界面
+    注意：此修改仅隐藏界面显示，不影响后台功能逻辑
+-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
@@ -27,18 +39,24 @@
     </group>
 
     <group android:id="@+id/group_id2">
+        <!-- 隐藏推广菜单 - 用户要求隐藏 -->
         <item
             android:id="@+id/promotion"
             android:icon="@drawable/ic_promotion_24dp"
-            android:title="@string/title_pref_promotion" />
+            android:title="@string/title_pref_promotion"
+            android:visible="false" />
+        <!-- 隐藏Logcat菜单 - 用户要求隐藏 -->
         <item
             android:id="@+id/logcat"
             android:icon="@drawable/ic_logcat_24dp"
-            android:title="@string/title_logcat" />
+            android:title="@string/title_logcat"
+            android:visible="false" />
+        <!-- 隐藏检查更新菜单 - 用户要求隐藏 -->
         <item
             android:id="@+id/check_for_update"
             android:icon="@drawable/ic_check_update_24dp"
-            android:title="@string/update_check_for_update" />
+            android:title="@string/update_check_for_update"
+            android:visible="false" />
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_about_24dp"
